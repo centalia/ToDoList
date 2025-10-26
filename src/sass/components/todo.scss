@@ -1,0 +1,75 @@
+@use '/src/sass/variables' as *;
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 100%;
+    max-width: 429px;
+    min-height: 404px;
+    padding: 24px;
+    background-color: $color-white;
+    border: $border;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.todo__title{
+    text-align: center;
+    font-size: 24px;
+    font-size: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.todo__form{
+    display: flex;
+    column-gap: 16px;
+
+}
+
+.todo__field{
+    width: 100%;
+}
+
+.todo__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+    font-weight: 600;
+}
+
+.todo__delete-all-button{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &:hover{
+        color: $color-gray-4;
+    }
+
+    &:not(is-visible){
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.todo__list,
+.todo__empty-message{
+    &:empty{
+        display: none;
+    }
+}
+
+.todo__list{
+    $todoListRowGap: 8px;
+
+    display: grid;
+    row-gap: $todoListRowGap;
+}
+
+.todo__empty-message{
+    text-align: center;
+    color: $color-gray-4;
+}

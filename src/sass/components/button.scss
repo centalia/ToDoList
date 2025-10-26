@@ -1,0 +1,22 @@
+@use '/src/sass/variables' as *;
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    height: $input-height;
+    padding: 12px;
+    color: $color-gray-1;
+    background-color: $color-dark-2;
+    border: 1px solid $color-dark-2;
+    border-radius: $border-radius;
+
+    &:hover{
+        color: $color-dark-2;
+        background-color: transparent;
+
+    }
+
+    &:active{
+        scale: 1.05;
+    }
+}
