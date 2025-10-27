@@ -1,5 +1,7 @@
 @use '/src/sass/variables' as *;
 
+$todoListRowGap: 8px;
+
 .todo{
     display: flex;
     flex-direction: column;
@@ -63,8 +65,6 @@
 }
 
 .todo__list{
-    $todoListRowGap: 8px;
-
     display: grid;
     row-gap: $todoListRowGap;
 }

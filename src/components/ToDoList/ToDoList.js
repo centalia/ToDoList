@@ -9,60 +9,53 @@ class ToDoList{
 
     render(){
         this.container.innerHTML = `
-            <div class="todo">
-                <h1 class="todo__title">To Do List</h1>
-                <form class="todo__form">
-                    <div class="todo__field field">
-                        <div class="field__label">
-                            <label 
-                                class="field__label"
-                                for="new-task"
-                            >
-                                New task
-                            </label>
-                            <input
-                                class="field__input"
-                                id="new-task"
-                                placeholder=" "
-                                autocomplete="off"
-                            />
-                        </div>
-                        <button class="button"
-                            type="submit"
-                        >
-                            Add
-                        </button>
-                    </div>
-                </form>
-                <form class="todo__form">
-                    <div class="todo__field field">
-                        <div class="field__label">
-                            <label 
-                                class="field__label"
-                                for="search-task"
-                            >
-                                Search task
-                            </label>
-                            <input
-                                class="field__input"
-                                id="search-task"
-                                placeholder=" "
-                                autocomplete="off"
-                                type="search"
-                            />
-                        </div>
-                    </div>
-                </form>
-                <div class="todo__info">
-                    <div class="todo__total-task">
-                        Total Task: <span>0</span>
-                    </div>
-                <button class="todo__delete-all-btn"
-                            type="button"
-                        >
-                            Delete All
-                </button>
+        <div class="todo" >
+            <h1 class="todo__title">To Do List</h1>
+            <form class="todo__form">
+                <div class="todo__field field">
+                    <label
+                        class="field__label"
+                        for="new-task"
+                    >
+                        New task
+                    </label>
+                    <input
+                        class="field__input"
+                        id="new-task"
+                        placeholder=" "
+                        autocomplete="off"
+                    />
                 </div>
+                <button class="button" type="submit">Add</button>
+            </form>
+            <form class="todo__form" >
+                <div class="todo__field field">
+                    <label
+                        class="field__label"
+                        for="search-task"
+                    >
+                        Search task
+                    </label>
+                    <input
+                        class="field__input"
+                        id="search-task"
+                        placeholder=" "
+                        autocomplete="off"
+                        type="search"
+                    />
+                </div>
+            </form>
+            <div class="todo__info">
+                <div class="todo__total-tasks">
+                    Total tasks: <span>0</span>
+                </div>
+                <button
+                    class="todo__delete-all-button"
+                    type="button"
+                >
+                    Delete all
+                </button>
+            </div>
                 <ul class="todo__list">
                     <li class="todo__item todo-item">
                         <input class="todo-item__checkbox"
@@ -128,10 +121,8 @@ class ToDoList{
                         </button>
                     </li>       
                 </ul>
-                <div class="todo__empty-message">
-                    
-                </div>
-            </div>`
+            <div class="todo__empty-message"></div>
+        </div>`
     }
 }
 
