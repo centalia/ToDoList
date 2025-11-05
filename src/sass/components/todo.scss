@@ -50,11 +50,6 @@ $todoListRowGap: 8px;
     &:hover{
         color: $color-gray-4;
     }
-
-    &:not(.is-visible){
-        opacity: 0;
-        visibility: hidden;
-    }
 }
 
 .todo__list,

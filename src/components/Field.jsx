@@ -1,17 +1,26 @@
-const Field = () => {
+const Field = (props) => {
+
+    const {
+        className = '',
+        id,
+        label,
+        type = 'text'
+    } = props
+
     return(
-        <div className="todo__field field">
+        <div className = {`field ${className}`}>
             <label
-                className="field__label"
-                htmlFor="new-task"
+                className   = "field__label"
+                htmlFor     = {id}
             >
-                New task
+                {label}
             </label>
             <input
-                className="field__input"
-                id="new-task"
-                placeholder=" "
-                autoComplete="off"
+                className       = "field__input"
+                id              = {id}
+                placeholder     = " "
+                autoComplete    = "off"
+                type            = {type}
             />
         </div>
     )
